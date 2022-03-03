@@ -1,0 +1,4 @@
+SELECT student.name, course.name as course, department.name as dept, exam.score from exam
+JOIN student ON student.studentID = exam.studentID
+JOIN department ON student.deptID = department.deptID
+JOIN course ON course.courseID = exam.courseID;
